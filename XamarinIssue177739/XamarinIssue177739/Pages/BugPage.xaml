@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:XamarinIssue177739.ViewModels;assembly=XamarinIssue177739"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinIssue177739.Pages.BugPage"
+             d:DataContext="{d:DesignInstance viewModels:BugPageViewModel}">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout HorizontalOptions="Center"
+                         VerticalOptions="Center">
+                <Label Text="This is the page that messes up. To repro:"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"
+                       Margin="2" />
+                <Label Text="1. Click the button below which should launch you out of the app"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"
+                       Margin="2" />
+                <Label Text="2. Wait a few seconds"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"
+                       Margin="2" />
+                <Label Text="3. Return to the app."
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"
+                       Margin="2" />
+                <Label Text="4. Repeat a few times and see the next screen not be correct"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"
+                       Margin="2" />
+
+                <Button Text="Launch External App"
+                        Command="{Binding LaunchExternalAppCommand}"
+                        Margin="8" />
+            </StackLayout>
+
+            <Grid IsVisible="{Binding IsDialogVisible}">
+                <Grid BackgroundColor="Black"
+                      Opacity=".8" />
+                <Grid VerticalOptions="Center"
+                      HorizontalOptions="Center"
+                      BackgroundColor="White"
+                      Margin="8">
+                    <StackLayout HorizontalOptions="Center"
+                                 VerticalOptions="FillAndExpand"
+                                 Orientation="Vertical"
+                                 Padding="8,16">
+                        <Label Text="Number of times this has come up:"
+                               HorizontalOptions="Center"
+                               Margin="4,4,4,4" />
+                        <Label Text="{Binding OpenCount}"
+                               HorizontalOptions="Center"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               LineBreakMode="WordWrap"
+                               Margin="4,4,4,8" />
+
+                        <Image Source="{Binding PhotoUrl}"
+                               Margin="4,4,4,12" />
+
+                        <StackLayout HorizontalOptions="Center"
+                                     Orientation="Horizontal">
+                            <Button Text="Correct"
+                                              Margin="8"
+                                              Command="{Binding CloseDialogCommand}"
+                                              WidthRequest="140" />
+                        </StackLayout>
+
+                        <Label Text="You can close the dialog by tapping on this too"
+                               HorizontalOptions="Center"
+                               Margin="8"
+                               TextColor="DarkBlue">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding CloseDialogCommand}" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

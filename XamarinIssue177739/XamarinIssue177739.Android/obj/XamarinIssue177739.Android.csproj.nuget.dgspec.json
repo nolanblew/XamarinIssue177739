@@ -1,0 +1,128 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\nolan\\Documents\\Visual Studio 2019\\XamarinIssue177739\\XamarinIssue177739\\XamarinIssue177739.Android\\XamarinIssue177739.Android.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\nolan\\Documents\\Visual Studio 2019\\XamarinIssue177739\\XamarinIssue177739\\XamarinIssue177739.Android\\XamarinIssue177739.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nolan\\Documents\\Visual Studio 2019\\XamarinIssue177739\\XamarinIssue177739\\XamarinIssue177739.Android\\XamarinIssue177739.Android.csproj",
+        "projectName": "XamarinIssue177739.Android",
+        "projectPath": "C:\\Users\\nolan\\Documents\\Visual Studio 2019\\XamarinIssue177739\\XamarinIssue177739\\XamarinIssue177739.Android\\XamarinIssue177739.Android.csproj",
+        "packagesPath": "C:\\Users\\nolan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nolan\\Documents\\Visual Studio 2019\\XamarinIssue177739\\XamarinIssue177739\\XamarinIssue177739.Android\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nolan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\nolan\\Documents\\Local NuGet": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {
+              "C:\\Users\\nolan\\Documents\\Visual Studio 2019\\XamarinIssue177739\\XamarinIssue177739\\XamarinIssue177739\\XamarinIssue177739.csproj": {
+                "projectPath": "C:\\Users\\nolan\\Documents\\Visual Studio 2019\\XamarinIssue177739\\XamarinIssue177739\\XamarinIssue177739\\XamarinIssue177739.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.3.0.908675, )"
+            }
+          }
+        }
+      }
+    },
+    "C:\\Users\\nolan\\Documents\\Visual Studio 2019\\XamarinIssue177739\\XamarinIssue177739\\XamarinIssue177739\\XamarinIssue177739.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nolan\\Documents\\Visual Studio 2019\\XamarinIssue177739\\XamarinIssue177739\\XamarinIssue177739\\XamarinIssue177739.csproj",
+        "projectName": "XamarinIssue177739",
+        "projectPath": "C:\\Users\\nolan\\Documents\\Visual Studio 2019\\XamarinIssue177739\\XamarinIssue177739\\XamarinIssue177739\\XamarinIssue177739.csproj",
+        "packagesPath": "C:\\Users\\nolan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nolan\\Documents\\Visual Studio 2019\\XamarinIssue177739\\XamarinIssue177739\\XamarinIssue177739\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nolan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\nolan\\Documents\\Local NuGet": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.3.0.908675, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
